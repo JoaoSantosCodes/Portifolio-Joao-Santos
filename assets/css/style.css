@@ -359,41 +359,41 @@ input {
     margin-right: var(--mb-0-75);
 }
 
-/*===== Intro Editada pelo Chat GPT =====*/
+/*===== Estilos padrão para tamanhos de tela maiores que 1408px =====*/
 .custom-text__box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 30px; /* Ajusta o espaçamento superior */
-    margin-left: 20px; /* Ajusta o espaçamento à esquerda */
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
 .custom-text__title,
 .custom-text__subtitle,
 .custom-text__description,
 .custom-text__button {
-    white-space: nowrap; /* Evita quebra de linha durante a animação */
-    overflow: hidden; /* Oculta o texto que ultrapassa a largura definida */
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .custom-text__title.typing {
-    animation: typing 4s steps(50, end) forwards; /* Ajuste a duração conforme necessário */
+    animation: typing 4s steps(50, end) forwards;
 }
 
 .custom-text__subtitle.typing-delay-1 {
-    animation: typing 4s steps(50, end) 30s forwards; /* Ajuste a duração e o atraso conforme necessário */
+    animation: typing 4s steps(50, end) 30s forwards;
 }
 
 .custom-text__subtitle.typing-delay-2 {
-    animation: typing 4s steps(50, end) 50s forwards; /* Ajuste a duração e o atraso conforme necessário */
+    animation: typing 4s steps(50, end) 50s forwards;
 }
 
 .custom-text__description.typing-delay-3 {
-    animation: typing 4s steps(50, end) 70s forwards; /* Ajuste a duração e o atraso conforme necessário */
+    animation: typing 4s steps(50, end) 70s forwards;
 }
 
 .custom-text__button.typing-delay-4 {
-    animation: typing 4s steps(50, end) 90s forwards; /* Ajuste a duração e o atraso conforme necessário */
+    animation: typing 4s steps(50, end) 90s forwards;
 }
 
 .custom-text__button-box {
@@ -401,19 +401,19 @@ input {
 }
 
 .custom-text__button {
-    margin-top: 10px; /* Adiciona espaço acima do botão */
-    font-size: 16px; /* Tamanho do texto do botão, ajuste conforme necessário */
-    padding: 10px 20px; /* Adiciona preenchimento ao botão */
-    background-color: var(--skin-color); /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    border: none; /* Remove a borda do botão */
-    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: var(--skin-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Adiciona transição suave para a cor de fundo */
+    transition: background-color 0.3s ease;
 }
 
 .custom-text__button:hover {
-    background-color: #4d8c5e; /* Cor de fundo do botão durante o hover */
+    background-color: #4d8c5e;
 }
 
 /* Adiciona a animação para cada elemento */
@@ -426,8 +426,62 @@ input {
     }
 }
 
-/*===== Redes Sociais - Contato direto =====*/
+/*===== Consulta de mídia para telas de até 1408px =====*/
+@media screen and (max-width: 1408px) {
+    .custom-text__box {
+        /* Adapte os estilos conforme necessário para telas de até 1408px */
+    }
+}
 
+/*===== Consulta de mídia para telas de até 1024px =====*/
+@media screen and (max-width: 1024px) {
+    .custom-text__box {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .custom-text__button {
+        font-size: 14px;
+    }
+}
+
+/*===== Consulta de mídia para telas de até 768px =====*/
+@media screen and (max-width: 768px) {
+    .custom-text__box {
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .custom-text__button {
+        font-size: 14px;
+    }
+}
+
+/*===== Consulta de mídia para telas de até 576px =====*/
+@media screen and (max-width: 576px) {
+    .custom-text__box {
+        margin-top: 20px;
+        margin-left: 8px;
+        font-size: 8px;
+    }
+
+    .custom-text__button {
+        font-size: 8px;
+    }
+}
+
+/*===== Consulta de mídia para telas de até 350px =====*/
+@media screen and (max-width: 350px) {
+    .custom-text__box,
+    .custom-text__button {
+        margin-top: 20px;
+        margin-left: 8px;
+        font-size: 8px;
+    }
+}
+
+/*===== Redes Sociais - Contato direto =====*/
 .custom-box {
     border-radius: 10px;
     padding: 15px;
@@ -436,7 +490,7 @@ input {
     align-items: center;
     text-align: center;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    margin-bottom: 14px; /* Ajusta o espaçamento entre os componentes */
+    margin-bottom: 14px;
 }
 
 .custom-box:hover {
@@ -445,7 +499,7 @@ input {
 }
 
 .custom-box__icon {
-    font-size: 30px; /* Diminui o tamanho do ícone */
+    font-size: 30px;
     color: var(--skin-color);
     transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
 }
@@ -465,12 +519,12 @@ input {
 
 .custom-box__title {
     margin: 5px 0;
-    font-size: 16px; /* Diminui o tamanho do título */
+    font-size: 16px;
 }
 
 .custom-box__subtitle {
     color: #666;
-    font-size: 12px; /* Diminui o tamanho do subtítulo */
+    font-size: 12px;
 }
 
 #iconContainer.clicked {
@@ -489,7 +543,6 @@ input {
     }
 }
 
-/* Estilização durante o hover para LinkedIn, WhatsApp e Email */
 #customBoxLinkedIn:hover .custom-box__icon,
 #customBoxWhatsApp:hover .custom-box__icon,
 #customBoxEmail:hover .custom-box__icon,
@@ -497,13 +550,14 @@ input {
     box-shadow: 0 1px 3px rgba(0, 0, 128, 0.3);
 }
 
-/* Animação de clique para LinkedIn, WhatsApp, Email e Facebook */
 #iconContainerLinkedIn.clicked,
 #iconContainerWhatsApp.clicked,
 #iconContainerEmail.clicked,
 #iconContainerFacebook.clicked {
     animation: bounce 0.5s ease;
 }
+
+
 
 
 /*===== Buttons =====*/

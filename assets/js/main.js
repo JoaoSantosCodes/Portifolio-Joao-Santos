@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
     animateElement(subtitle1, 1500);
     animateElement(subtitle2, 2000);
     animateElement(description, 2500);
-    animateElement(button, 3000);
+    animateElement(button, 10000);
 
     function animateElement(element, delay) {
         setTimeout(() => {
