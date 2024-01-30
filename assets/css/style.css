@@ -467,7 +467,13 @@ input {
     }
 
     .custom-text__button {
-        font-size: 10px;
+        font-size: 8px;
+    }
+
+    /* Estilos específicos para telas menores que 576px */
+    #customBoxWhatsApp,
+    #customBoxEmail {
+        font-size: 8px; /* Adapte o tamanho do texto conforme necessário */
     }
 }
 
@@ -478,6 +484,12 @@ input {
         margin-top: 20px;
         margin-left: 8px;
         font-size: 8px;
+    }
+
+    /* Estilos específicos para telas menores que 350px */
+    #customBoxWhatsApp,
+    #customBoxEmail {
+        font-size: 8px; /* Adapte o tamanho do texto conforme necessário */
     }
 }
 
