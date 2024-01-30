@@ -276,7 +276,7 @@ input {
 .home__social {
     position: absolute;
     top: 1.8rem;
-    left:0;
+    left: 0;
     display: flex;
     align-items: center;
     column-gap: 3.5rem;
@@ -467,7 +467,9 @@ input {
         order: 1; /* Define a ordem para que fique acima dos botões */
     }
 
-    .custom-text__button {
+    .custom-text__button,
+    #customBoxWhatsApp,
+    #customBoxEmail {
         font-size: 8px;
     }
 
@@ -614,6 +616,7 @@ input {
 .button__icon {
     font-size: 1.25rem;
 }
+
 
 
 /*===== About Section =====*/

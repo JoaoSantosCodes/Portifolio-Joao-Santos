@@ -179,21 +179,12 @@ iconContainer.addEventListener("click", () => {
 
 /*===== Intro Editada pelo Chat GPT =====*/
 document.addEventListener("DOMContentLoaded", function () {
-    const title = document.querySelector(".custom-text__title");
-    const subtitle1 = document.querySelector(".custom-text__subtitle.typing-delay-1");
-    const subtitle2 = document.querySelector(".custom-text__subtitle.typing-delay-2");
-    const description = document.querySelector(".custom-text__description.typing-delay-3");
-    const button = document.querySelector(".custom-text__button.typing-delay-4");
+    const elements = document.querySelectorAll('.custom-text__box > *');
 
-    animateElement(title, 1000);
-    animateElement(subtitle1, 1500);
-    animateElement(subtitle2, 2000);
-    animateElement(description, 2500);
-    animateElement(button, 10000);
+    elements.forEach((element, index) => {
+        element.classList.add(`typing-delay-${index + 1}`);
+    });
 
-    function animateElement(element, delay) {
-        setTimeout(() => {
-            element.classList.add('typing');
-        }, delay);
-    }
+    // Inicia a animação
+    document.querySelector('.custom-text__box').classList.add('typing');
 });
