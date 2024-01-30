@@ -176,3 +176,15 @@ iconContainer.addEventListener("click", () => {
 
     // Adicione lógica adicional aqui, como redirecionar para o perfil do LinkedIn.
 });
+
+/*===== Intro Editada pelo Chat GPT =====*/
+document.addEventListener("DOMContentLoaded", function () {
+    // Elementos a serem animados
+    const textElements = document.querySelectorAll(".custom-text__title, .custom-text__subtitle, .custom-text__description, .custom-text__button");
+
+    // Adiciona as classes 'animate__animated', 'animate__fadeIn', 'animate__rotateIn', e 'animate__infinite' a cada elemento com atraso incremental
+    textElements.forEach((element, index) => {
+        element.classList.add("animate__animated", "animate__fadeIn", "animate__rotateIn", "animate__infinite");
+        element.style.animationDelay = `${index * 0.2}s`; // Atraso incremental para cada elemento
+    });
+});

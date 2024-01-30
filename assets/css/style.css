@@ -359,6 +359,49 @@ input {
     margin-right: var(--mb-0-75);
 }
 
+/*===== Intro Editada pelo Chat GPT =====*/
+.custom-text__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px; /* Ajusta o espaçamento superior */
+    margin-left: 20px; /* Ajusta o espaçamento à esquerda */
+}
+
+.custom-text__title {
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+    font-size: 24px; /* Tamanho do título, ajuste conforme necessário */
+}
+
+.custom-text__subtitle {
+    margin-bottom: 5px; /* Adiciona espaço abaixo de cada subtítulo */
+    font-size: 16px; /* Tamanho do subtítulo, ajuste conforme necessário */
+}
+
+.custom-text__description {
+    font-size: 14px; /* Tamanho da descrição, ajuste conforme necessário */
+}
+
+.custom-text__button-box {
+    display: flex;
+}
+
+.custom-text__button {
+    margin-top: 10px; /* Adiciona espaço acima do botão */
+    font-size: 16px; /* Tamanho do texto do botão, ajuste conforme necessário */
+    padding: 10px 20px; /* Adiciona preenchimento ao botão */
+    background-color: var(--skin-color); /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adiciona transição suave para a cor de fundo */
+}
+
+.custom-text__button:hover {
+    background-color: #4d8c5e; /* Cor de fundo do botão durante o hover */
+}
+
 /*===== Redes Sociais - Contato direto =====*/
 
 .custom-box {
