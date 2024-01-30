@@ -169,3 +169,10 @@ function navHighlighter() {
 }
 
 /*=============== SHOW SCROLL UP ===============*/
+const iconContainer = document.getElementById("iconContainer");
+
+iconContainer.addEventListener("click", () => {
+    iconContainer.classList.add("animate__animated", "animate__rubberBand");
+
+    // Adicione lógica adicional aqui, como redirecionar para o perfil do LinkedIn.
+});

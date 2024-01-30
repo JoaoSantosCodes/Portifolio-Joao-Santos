@@ -359,6 +359,86 @@ input {
     margin-right: var(--mb-0-75);
 }
 
+/*===== Redes Sociais - Contato direto =====*/
+
+.custom-box {
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-bottom: 14px; /* Ajusta o espaçamento entre os componentes */
+}
+
+.custom-box:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.custom-box__icon {
+    font-size: 30px; /* Diminui o tamanho do ícone */
+    color: var(--skin-color);
+    transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-box:hover .custom-box__icon {
+    transform: scale(1.2);
+    opacity: 1;
+    filter: brightness(1.5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.custom-box__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-box__title {
+    margin: 5px 0;
+    font-size: 16px; /* Diminui o tamanho do título */
+}
+
+.custom-box__subtitle {
+    color: #666;
+    font-size: 12px; /* Diminui o tamanho do subtítulo */
+}
+
+#iconContainer.clicked {
+    animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Estilização durante o hover para LinkedIn, WhatsApp e Email */
+#customBoxLinkedIn:hover .custom-box__icon,
+#customBoxWhatsApp:hover .custom-box__icon,
+#customBoxEmail:hover .custom-box__icon,
+#customBoxFacebook:hover .custom-box__icon {
+    box-shadow: 0 1px 3px rgba(0, 0, 128, 0.3);
+}
+
+/* Animação de clique para LinkedIn, WhatsApp, Email e Facebook */
+#iconContainerLinkedIn.clicked,
+#iconContainerWhatsApp.clicked,
+#iconContainerEmail.clicked,
+#iconContainerFacebook.clicked {
+    animation: bounce 0.5s ease;
+}
+
+
 /*===== Buttons =====*/
 .button {
     display: inline-flex;
