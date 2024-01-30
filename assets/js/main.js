@@ -186,10 +186,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const button = document.querySelector(".custom-text__button.typing-delay-4");
 
     animateElement(title, 1000);
-    animateElement(subtitle1, 2000);
-    animateElement(subtitle2, 3000);
-    animateElement(description, 4000);
-    animateElement(button, 5000);
+    animateElement(subtitle1, 1500);
+    animateElement(subtitle2, 2000);
+    animateElement(description, 2500);
+    animateElement(button, 3000);
 
     function animateElement(element, delay) {
         setTimeout(() => {
