@@ -464,6 +464,7 @@ input {
         margin-top: 20px;
         margin-left: 8px;
         font-size: 8px;
+        order: 1; /* Define a ordem para que fique acima dos botões */
     }
 
     .custom-text__button {
@@ -473,7 +474,15 @@ input {
     /* Estilos específicos para telas menores que 576px */
     #customBoxWhatsApp,
     #customBoxEmail {
-        font-size: 8px; /* Adapte o tamanho do texto conforme necessário */
+        width: 100%; /* Ocupa a largura total */
+        text-align: center; /* Centraliza o texto */
+        margin-top: 10px; /* Adiciona um espaço entre os elementos */
+        order: 2; /* Define a ordem para que fiquem abaixo do botão */
+    }
+
+    #customBoxWhatsApp .custom-box__icon,
+    #customBoxEmail .custom-box__icon {
+        font-size: 10px; /* Adapte o tamanho do ícone conforme necessário */
     }
 }
 
