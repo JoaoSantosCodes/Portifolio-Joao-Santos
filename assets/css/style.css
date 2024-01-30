@@ -594,6 +594,7 @@ input {
     font-size: 1.25rem;
 }
 
+
 /*===== About Section =====*/
 .about__container {
     grid-template-columns: repeat(2,1fr);
