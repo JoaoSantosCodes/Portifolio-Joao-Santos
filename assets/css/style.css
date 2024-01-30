@@ -368,18 +368,32 @@ input {
     margin-left: 20px; /* Ajusta o espaçamento à esquerda */
 }
 
-.custom-text__title {
-    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
-    font-size: 24px; /* Tamanho do título, ajuste conforme necessário */
+.custom-text__title,
+.custom-text__subtitle,
+.custom-text__description,
+.custom-text__button {
+    white-space: nowrap; /* Evita quebra de linha durante a animação */
+    overflow: hidden; /* Oculta o texto que ultrapassa a largura definida */
 }
 
-.custom-text__subtitle {
-    margin-bottom: 5px; /* Adiciona espaço abaixo de cada subtítulo */
-    font-size: 16px; /* Tamanho do subtítulo, ajuste conforme necessário */
+.custom-text__title.typing {
+    animation: typing 4s steps(50, end) forwards; /* Ajuste a duração conforme necessário */
 }
 
-.custom-text__description {
-    font-size: 14px; /* Tamanho da descrição, ajuste conforme necessário */
+.custom-text__subtitle.typing-delay-1 {
+    animation: typing 4s steps(50, end) 30s forwards; /* Ajuste a duração e o atraso conforme necessário */
+}
+
+.custom-text__subtitle.typing-delay-2 {
+    animation: typing 4s steps(50, end) 50s forwards; /* Ajuste a duração e o atraso conforme necessário */
+}
+
+.custom-text__description.typing-delay-3 {
+    animation: typing 4s steps(50, end) 70s forwards; /* Ajuste a duração e o atraso conforme necessário */
+}
+
+.custom-text__button.typing-delay-4 {
+    animation: typing 4s steps(50, end) 90s forwards; /* Ajuste a duração e o atraso conforme necessário */
 }
 
 .custom-text__button-box {
@@ -400,6 +414,16 @@ input {
 
 .custom-text__button:hover {
     background-color: #4d8c5e; /* Cor de fundo do botão durante o hover */
+}
+
+/* Adiciona a animação para cada elemento */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 /*===== Redes Sociais - Contato direto =====*/

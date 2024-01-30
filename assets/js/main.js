@@ -179,12 +179,21 @@ iconContainer.addEventListener("click", () => {
 
 /*===== Intro Editada pelo Chat GPT =====*/
 document.addEventListener("DOMContentLoaded", function () {
-    // Elementos a serem animados
-    const textElements = document.querySelectorAll(".custom-text__title, .custom-text__subtitle, .custom-text__description, .custom-text__button");
+    const title = document.querySelector(".custom-text__title");
+    const subtitle1 = document.querySelector(".custom-text__subtitle.typing-delay-1");
+    const subtitle2 = document.querySelector(".custom-text__subtitle.typing-delay-2");
+    const description = document.querySelector(".custom-text__description.typing-delay-3");
+    const button = document.querySelector(".custom-text__button.typing-delay-4");
 
-    // Adiciona as classes 'animate__animated', 'animate__fadeIn', 'animate__rotateIn', e 'animate__infinite' a cada elemento com atraso incremental
-    textElements.forEach((element, index) => {
-        element.classList.add("animate__animated", "animate__fadeIn", "animate__rotateIn", "animate__infinite");
-        element.style.animationDelay = `${index * 0.2}s`; // Atraso incremental para cada elemento
-    });
+    animateElement(title, 1000);
+    animateElement(subtitle1, 2000);
+    animateElement(subtitle2, 3000);
+    animateElement(description, 4000);
+    animateElement(button, 5000);
+
+    function animateElement(element, delay) {
+        setTimeout(() => {
+            element.classList.add('typing');
+        }, delay);
+    }
 });

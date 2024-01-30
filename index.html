@@ -35,6 +35,13 @@
 
     <!-- ANIMATE.CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha384-rB9sY6RkxEZo9Q7EAC/pPzSmtUizF1B1qJXQy8V1ndLl7Hz+0t6dwv5z7C2JB4tk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
 </head>
 
 <body>
@@ -108,16 +115,34 @@
                 <img src="assets/img/home-img-Test1.png" alt="" class="home__img">
 
                 <div class="custom-text__box">
-                    <h1 class="custom-text__title">Olá, eu sou João</h1>
-                    <h3 class="custom-text__subtitle">Formado em Gestão de TI e Técnico de Rede.</h3>
-                    <p class="custom-text__subtitle">Cursando Análise e Desenvolvimento de Sistemas.</p>
-                    <p class="custom-text__description">Estou sempre buscando me aperfeiçoar e aprimorar na área da tecnologia.</p>
+                    <h1 class="custom-text__title typing">Olá, eu sou João</h1>
+                    <h3 class="custom-text__subtitle typing-delay-1">Formado em Gestão de TI e Técnico de Rede.</h3>
+                    <p class="custom-text__subtitle typing-delay-2">Cursando Análise e Desenvolvimento de Sistemas.</p>
+                    <p class="custom-text__description typing-delay-3">Estou sempre buscando me aperfeiçoar e aprimorar na área da tecnologia.</p>
                     <div class="custom-text__button-box">
-                        <a href="#about" class="custom-text__button">
+                        <a href="#about" class="custom-text__button typing-delay-4">
                             <i class="uil uil-user custom-text__icon"></i>Mais sobre mim.
                         </a>
                     </div>
                 </div>
+                
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const elements = document.querySelectorAll('.custom-text__box > *');
+                
+                        function animateElements(index) {
+                            if (index < elements.length) {
+                                elements[index].classList.add('typing');
+                                setTimeout(function () {
+                                    animateElements(index + 1);
+                                }, 1000); // Ajuste o atraso conforme necessário
+                            }
+                        }
+                
+                        // Inicia a animação
+                        animateElements(0);
+                    });
+                </script>
 
                 <div class="my__info">
 
