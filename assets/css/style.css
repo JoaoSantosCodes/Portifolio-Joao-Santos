@@ -416,16 +416,6 @@ input {
     background-color: #4d8c5e;
 }
 
-/* Adiciona a animação para cada elemento */
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
 /*===== Consulta de mídia para telas de até 1408px =====*/
 @media screen and (max-width: 1408px) {
     .custom-text__box {

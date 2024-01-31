@@ -178,13 +178,13 @@ iconContainer.addEventListener("click", () => {
 });
 
 /*===== Intro Editada pelo Chat GPT =====*/
-document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll('.custom-text__box > *');
-
-    elements.forEach((element, index) => {
-        element.classList.add(`typing-delay-${index + 1}`);
-    });
+//document.addEventListener("DOMContentLoaded", function () {
+//    const elements = document.querySelectorAll('.custom-text__box > *');
+//
+//    elements.forEach((element, index) => {
+//        element.classList.add(`typing-delay-${index + 1}`);
+//    });
 
     // Inicia a animação
-    document.querySelector('.custom-text__box').classList.add('typing');
-});
+//    document.querySelector('.custom-text__box').classList.add('typing');
+//});
